@@ -75,11 +75,11 @@ function printMessageBody($email, $purifier) {
   integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
   crossorigin="anonymous">
 
-<title><?php
-  echo $emails ? "(" . count($emails) . ") " : "";
-  echo $user->address ?></title>
+<title>Joyabo Disposable Temporary Mailbox for <?php
+  echo $user->address;
+  echo $emails ? " (" . count($emails) . ") " : ""; ?>
+</title>
 
-<link rel="stylesheet" href="assets/spinner.css">
 <link rel="stylesheet" href="assets/custom.css">
 
 <script>
@@ -112,7 +112,7 @@ function printMessageBody($email, $purifier) {
     <strong>New emails</strong> have arrived.
     <button type="button" class="btn btn-outline-secondary" onclick="location.reload()">
       <i class="fas fa-sync"></i>
-      Reload!
+      Reload your mailbox!
     </button>
   </div>
   <!-- move the rest of the page a bit down to show all content -->
@@ -121,61 +121,26 @@ function printMessageBody($email, $purifier) {
 
 <header>
   <div class="container">
-    <a href="https://www.joyabo.com/" title="Joyabo Temporary Disposable Mailbox" target="_top"><img src="https://www.joyabo.com/images/joyabo-logo-01-transparent-200x83.png" width="200" height="83" border="0"></a>
+    <a href="https://www.joyabo.com/" title="Joyabo Temporary Disposable Mailbox" target="_top"><img src="https://static.joyabo.com/logo/joyabo-logo-01-transparent-200x83.png" width="200" height="83" border="0"></a>
     <p class="lead ">Your temporary disposable mailbox is ready.</p>
     <div class="row" id="address-box-normal">
       <div class="col my-address-block">
         <span id="my-address"><?php echo $user->address ?></span>&nbsp;<button class="copy-button" data-clipboard-target="#my-address">Copy my temporary email address</button>
       </div>
       <div class="col get-new-address-col">
-        <button type="button" class="btn btn-outline-dark"
-          data-toggle="collapse" title="choose your own address"
-          data-target=".change-address-toggle"
-          aria-controls="address-box-normal address-box-edit" aria-expanded="false">
-          <i class="fas fa-magic"></i> Change to random email address
-        </button>
+        <p><a href="?action=random" role="button" class="btn btn-outline-dark"><i class="fa fa-random"></i> Open random email address</a></p>
       </div>
     </div>
-    <form class="collapse change-address-toggle" id="address-box-edit" action="?action=redirect" method="post">
-      <div class="card">
-        <div class="card-body">
-          <p><a href="?action=random" role="button" class="btn btn-dark"><i class="fa fa-random"></i>Open random email address</a></p>
-          Or you may specify your own email address:
-          <div class="form-row align-items-center">
-            <div class="col-sm">
-              <label class="sr-only" for="inlineFormInputName">Username (Email ID)</label>
-              <input name="username" type="text" class="form-control" id="inlineFormInputName" 
-                placeholder="username"
-                value="<?php echo $user->username ?>">
-            </div>
-            <div class="col-sm-auto my-1">
-              <label class="sr-only" for="inlineFormInputGroupUsername">Domain Name</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">@</div>
-                </div>
-                <select class="custom-select" id="inlineFormInputGroupUsername" name="domain">
-                  <?php
-                    foreach ($config['domains'] as $aDomain) {
-                    $selected = $aDomain === $user->domain ? ' selected ' : '';
-                    print "<option value='$aDomain' $selected>$aDomain</option>";
-                    }
-                  ?>
-                </select>
-              </div>
-            </div>
-            <div class="col-auto my-1">
-              <button type="submit" class="btn btn-primary">Open mailbox</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
   </div>
 </header>
 
 <main>
   <div class="container">
+    <button type="button" class="btn btn-outline-secondary" onclick="location.reload()">
+      <i class="fas fa-sync"></i>
+      Reload your mailbox!
+    </button>
+    <br><br>
     <div id="email-list" class="list-group">
       <?php
         foreach ($emails as $email) {
@@ -211,11 +176,6 @@ function printMessageBody($email, $purifier) {
                 href="<?php echo "?action=download_email&email_id=$safe_email_id&address=$user->address" ?>">
                 Download
               </a>
-              <a class="btn btn-outline-danger btn-sm"
-                role="button"
-                href="<?php echo "?action=delete_email&email_id=$safe_email_id&address=$user->address" ?>">
-                Delete
-              </a>
             </div>
             <?php printMessageBody($email, $purifier); ?>
           </div>
@@ -227,14 +187,7 @@ function printMessageBody($email, $purifier) {
         if (empty($emails)) {
       ?>
       <div id="empty-mailbox">
-        <p>The mailbox is empty. Checking for new emails automatically. </p>
-        <div class="spinner">
-          <div class="rect1"></div>
-          <div class="rect2"></div>
-          <div class="rect3"></div>
-          <div class="rect4"></div>
-          <div class="rect5"></div>
-        </div>
+        <p>Your mailbox is empty.</p>
       </div>
       <?php
       } ?>
@@ -244,17 +197,8 @@ function printMessageBody($email, $purifier) {
 
 <footer>
   <div class="container">
-
-<!--                <select id="language-selection" class="custom-select" title="Language">-->
-<!--                    <option selected>English</option>-->
-<!--                    <option value="1">Deutsch</option>-->
-<!--                    <option value="2">Two</option>-->
-<!--                    <option value="3">Three</option>-->
-<!--                </select>-->
-<!--                <br>-->
-
     <small class="text-justify quick-summary">
-      This is a disposable mailbox service. Whoever knows your username, can read your emails. Emails will be deleted after 1 day.
+      This is a disposable mailbox service, keeps your main mailbox clean from spam. Emails will be automatically deleted after 1 day.
       <a data-toggle="collapse" href="#about"
         aria-expanded="false"
         aria-controls="about">
@@ -262,13 +206,11 @@ function printMessageBody($email, $purifier) {
       </a>
     </small>
     <div class="card card-body collapse" id="about" style="max-width: 40rem">
-      <p class="text-justify">This disposable mailbox keeps your main mailbox clean from spam.</p>
       <p class="text-justify">
-        Just choose an address and use it on websites you don't trust and don't use your main email address.
+        Just use your temporary email address on websites you don't trust and don't use your main email address.
         Once you are done, you can just forget about the mailbox. All the spam stays here and does not fill up your main mailbox.
       </p>
       <p class="text-justify">
-        You select the address you want to use and received emails will be displayed automatically.
         There is no registration and no passwords. If you know the address, you can read the emails.
         <strong>Basically, all emails are public. So don't use it for sensitive data.</strong>
       </p>
