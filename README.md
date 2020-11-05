@@ -2,7 +2,7 @@ A **self-hosted** temporary disposable mailbox  service (aka trash mail)  :cloud
 
 **Forked**: https://github.com/synox/disposable-mailbox
 
-I use it as live production at the following website:
+I made some modifications and use it as live production at the following website:
 
 **Demo**: [Joyabo](https://www.joyabo.com/) 
 
