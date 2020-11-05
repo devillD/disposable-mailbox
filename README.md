@@ -1,6 +1,6 @@
 A **self-hosted** temporary disposable mailbox  service (aka trash mail)  :cloud: :envelope: 
 
-**Forked**: https://github.com/synox/disposable-mailbox
+**Forked From**: https://github.com/synox/disposable-mailbox
 
 I made some modifications and use it as live production at the following website:
 
