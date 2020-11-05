@@ -62,9 +62,9 @@ Disposable-mailbox can be installed by copying the src directory to a webserver.
 ## Credit :thumbsup:
 
 This could not be possible without...
-
- * https://github.com/barbushin/php-imap
- * https://github.com/gnugat-legacy/PronounceableWord
- * http://htmlpurifier.org/, 
- * https://github.com/turbolinks/turbolinks
- * http://tobiasahlin.com/spinkit/
+* https://github.com/synox/disposable-mailbox
+* https://github.com/barbushin/php-imap
+* https://github.com/gnugat-legacy/PronounceableWord
+* http://htmlpurifier.org/, 
+* https://github.com/turbolinks/turbolinks
+* http://tobiasahlin.com/spinkit/
