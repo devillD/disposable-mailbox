@@ -63,16 +63,12 @@ Install php dependecies:
 
     ini_set('display_errors', 1);    ini_set('display_startup_errors', 1);    error_reporting(E_ALL);
 
-## Testing on MacOs
- * brew install php
- * brew tap kabel/php-ext 
- * brew install kabel/php-ext/php-imap
- * php -S localhost:8000 -t src
- 
-
 ## Credit :thumbsup:
 
 This could not be possible without...
 
- * https://github.com/barbushin/php-imap, https://github.com/gnugat-legacy/PronounceableWord, http://htmlpurifier.org/, 
- * https://github.com/turbolinks/turbolinks, http://tobiasahlin.com/spinkit/
+ * https://github.com/barbushin/php-imap
+ * https://github.com/gnugat-legacy/PronounceableWord
+ * http://htmlpurifier.org/, 
+ * https://github.com/turbolinks/turbolinks
+ * http://tobiasahlin.com/spinkit/
