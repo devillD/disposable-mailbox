@@ -4,7 +4,7 @@ require_once './imap_client.php';
 
 function render_error($status, $msg) {
     @http_response_code($status);
-    die("{'result': 'error', 'error': '$msg'}");
+    die("('result': 'error', 'error': '$msg')");
 }
 
 class DisplayEmailsController {
@@ -55,7 +55,7 @@ class RedirectToRandomAddressController {
     }
 
     public static function invoke(ImapClient $imapClient, array $config) {
-        $address = User::get_random_address($config{'domains'});
+        $address = User::get_random_address($config['domains']);
         RedirectToAddressController::render($address);
     }
 }
