@@ -1,11 +1,10 @@
-# disposable-mailbox
-[![Join the chat at https://gitter.im/synox/disposable-mailbox](https://badges.gitter.im/synox/disposable-mailbox.svg)](https://gitter.im/synox/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+A **self-hosted** temporary disposable mailbox  service (aka trash mail)  :cloud: :envelope: 
 
-A **self-hosted** disposable mailbox  service (aka trash mail)  :cloud: :envelope: 
+**Forked**: https://github.com/synox/disposable-mailbox
 
-**Demo**: [BhadooMail](https://inbox.bhadoomail.com/inbox/) 
+I use it as live production at the following website:
 
-**PHP is not your thing? You should try the more efficient NodeJs version:** https://github.com/synox/void-mail
+**Demo**: [Joyabo](https://www.joyabo.com/) 
 
 ![Screenshot](docs/screenshot_example.png)
 
