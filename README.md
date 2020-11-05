@@ -6,7 +6,7 @@ I use it as live production at the following website:
 
 **Demo**: [Joyabo](https://www.joyabo.com/) 
 
-![Screenshot](src/images/screenshoot-example-joyabo.png)
+![Screenshot](docs/screenshot_example.png)
 
 
 ## Features
