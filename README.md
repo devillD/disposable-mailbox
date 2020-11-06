@@ -24,8 +24,8 @@ I made some minor modifications and use it as live production at the following w
 
 ### Requirements
 
-* webserver with php >=7.2
-* php [imap extension](http://php.net/manual/book.imap.php)
+* Webserver with php >=7.2
+* Php [imap extension](http://php.net/manual/book.imap.php)
 * IMAP account and a domain with [catch-all configuration](https://www.google.ch/search?q=how+to+setup+catch-all+imap+mailbox). (all emails go to one mailbox). 
 
 
