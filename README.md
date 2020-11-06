@@ -4,7 +4,7 @@ A **self-hosted** disposable temporary mailbox service using php, catch-all and 
 
 I made some minor modifications and use it as live production at the following website:
 
-**Demo**: [Joyabo (www.joyabo.com)](https://www.joyabo.com/) 
+**Live & Demo**: [Joyabo (www.joyabo.com)](https://www.joyabo.com/) 
 
 ![Screenshot](https://static.joyabo.com/external/joyabo-screenshot-example-02.png)
 
