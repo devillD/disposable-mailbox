@@ -12,7 +12,7 @@ I made some modifications and use it as live production at the following website
 ## Features
 
 * Anonymous usage.
-* Generate random email addresses. 
+* Generate random email addresses or specify your own. 
 * Download your emails.
 * Display emails as text with sanitization filter. 
 * Display emails based on one [catch-all imap mailbox](https://www.google.ch/search?q=how+to+setup+catch-all+imap+mailbox).
