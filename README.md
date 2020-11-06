@@ -2,7 +2,7 @@ A **self-hosted** disposable temporary mailbox service using php, catch-all and 
 
 **Forked From**: https://github.com/synox/disposable-mailbox
 
-I made some modifications and use it as live production at the following website:
+I made some minor modifications and use it as live production at the following website:
 
 **Demo**: [Joyabo](https://www.joyabo.com/) 
 
