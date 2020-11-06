@@ -34,7 +34,7 @@ I made some modifications and use it as live production at the following website
 * Subscribe to [![Join the chat at https://gitter.im/synox/disposable-mailbox](https://badges.gitter.im/synox/disposable-mailbox.svg)](https://gitter.im/synox/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to be notified about issues and bugfixes.  
 * This is **Beta** software, [there are still unsolved problems](https://github.com/synox/disposable-mailbox/issues). Contributions are welcome! :heart:
 * License: **GPL-3.0**. You can modify this application and run it anywhere, charge money and show advertisement. Any forks or repacked distribution must follow the [GPL-3.0 license](https://opensource.org/licenses/GPL-3.0).  
-* A link to https://github.com/synox/disposable-mailbox in the footer is appreciated.  
+* A link to https://github.com/joyabo/disposable-mailbox in the footer is appreciated.  
 
 
 ### Installation
