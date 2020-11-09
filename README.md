@@ -6,6 +6,8 @@ I made some minor modifications and use it as live production at the following w
 
 **Live & Demo**: [Joyabo (www.joyabo.com)](https://www.joyabo.com/) 
 
+Joyabo is a project of [Wufuquan](https://www.wufuquan.com/)
+
 ![Screenshot](https://static.joyabo.com/external/joyabo-screenshot-example-02.png)
 
 
