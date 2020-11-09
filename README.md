@@ -43,14 +43,14 @@ Joyabo is a project of [Wufuquan](https://www.wufuquan.com/)
 
 Disposable-mailbox can be installed by copying the src directory to a webserver. 
 
-1. assure the [imap extension](http://php.net/manual/book.imap.php) is installed. The following command should not print any errors:
+1. Assure the [imap extension](http://php.net/manual/book.imap.php) is installed. The following command should not print any errors:
 
         <?php print imap_base64("SU1BUCBleHRlbnNpb24gc2VlbXMgdG8gYmUgaW5zdGFsbGVkLiA="); ?>
 
-2. download a [release](https://github.com/synox/disposable-mailbox/releases) or clone this repository
-3. copy the files in the `src` directory to your web server (not the whole repo!).
-4. rename `config.sample.php` to `config.php` and apply the imap settings. Move `config.php` to a safe location in a *parent directory* outside the `public_html`, so it is not reachable through the browser.
-5. open it in your browser, check your php error log for messages. 
+2. Download a [release](https://github.com/synox/disposable-mailbox/releases) or clone this repository
+3. Copy the files in the `src` directory to your web server (not the whole repo!).
+4. Rename `config.sample.php` to `config.php` and apply the imap settings. Move `config.php` to a safe location in a *parent directory* outside the `public_html`, so it is not reachable through the browser.
+5. Open it in your browser, check your php error log for messages. 
 
 
 ### Troubleshooting
@@ -70,3 +70,8 @@ This could not be possible without...
 * http://htmlpurifier.org/, 
 * https://github.com/turbolinks/turbolinks
 * http://tobiasahlin.com/spinkit/
+
+## Others
+
+Looking for similar services with different approaches ?
+Try: [Ikahana](https://www.ikahana.com/), [Poistaa](https://www.poistaa.com/) or [Ditchy](https://www.ditchly.com/)
