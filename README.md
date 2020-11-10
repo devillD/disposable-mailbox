@@ -73,4 +73,4 @@ This could not be possible without...
 
 ## Others
 
-Looking for similar services with different approaches? Try: [Ikahana](https://www.ikahana.com/), [Poistaa](https://www.poistaa.com/) or [Ditchy](https://www.ditchly.com/).
+Looking for similar services with different approaches? Try: [Ikahana](https://www.ikahana.com/) or [Poistaa](https://www.poistaa.com/).
