@@ -1,4 +1,4 @@
-A **self-hosted** disposable temporary mailbox service using php, catch-all and imap.
+A **self-hosted** disposable temporary mailbox service using php, catch-all email and imap.
 
 **Forked From**: https://github.com/synox/disposable-mailbox
 
