@@ -64,16 +64,6 @@ function printMessageBody($email, $purifier) {
 <html lang="en">
 <head>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178749892-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-178749892-1');
-</script>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -146,7 +136,7 @@ function printMessageBody($email, $purifier) {
     <form class="collapse change-address-toggle" id="address-box-edit" action="?action=redirect" method="post">
       <div class="card">
         <div class="card-body">
-          <p><a href="?action=random" role="button" class="btn btn-dark"><i class="fa fa-random"></i> Get random mailbox</a></p>
+          <p><a href="?action=random" role="button" class="btn btn-dark"><i class="fa fa-random"></i> Get random email address</a></p>
           Or specify your own address:
           <div class="form-row align-items-center">
             <div class="col-sm">
@@ -235,13 +225,6 @@ function printMessageBody($email, $purifier) {
       ?>
       <div id="empty-mailbox">
         <p>Your mailbox is empty.</p>
-        <div class="spinner">
-          <div class="rect1"></div>
-          <div class="rect2"></div>
-          <div class="rect3"></div>
-          <div class="rect4"></div>
-          <div class="rect5"></div>
-        </div>
       </div>
       <?php
       } ?>
@@ -271,7 +254,7 @@ function printMessageBody($email, $purifier) {
     </div>
     <p>
       <small>
-        Joyabo is a project of <a href="https://www.wufuquan.com">Wufuquan</a>.
+        Joyabo is a project of <a href="https://www.wufuquan.com">Wufuquan</a>. Support us by <a href="https://paypal.me/wufuquan">Paypal</a>.
         <br>
         Domain name registered at <a href="https://go.joyabo.com/namecheap" title="Name Cheap Domain Registration" target="_blank">Name Cheap</a>. Web hosting at <a href="https://go.joyabo.com/mechanicweb" title="Mechanic Web Hosting Provider" target="_blank">Mechanic Web</a>. Powered by <a href="https://github.com/joyabo/disposable-mailbox" title="Synox Disposable Mailbox" target="_blank">Synox Disposable Mailbox</a>
         <br>
