@@ -73,4 +73,4 @@ This could not be possible without...
 
 ## Others
 
-Looking for similar services with different approaches? Try: [Ikahana](https://www.ikahana.com/) or [Markotop](https://www.markotop.com/).
+Looking for similar services with different approaches? Try: [Ikahana](https://www.ikahana.com/).
