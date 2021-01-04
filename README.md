@@ -8,7 +8,7 @@ I made some minor modifications and use it as live production at the following w
 
 Joyabo is a project of [Wufuquan](https://www.wufuquan.com/)
 
-![Screenshot](http://excite.wufuquan.com/images/2020/joyabo-screenshot-example-02.png)
+![Screenshot](https://excite.wufuquan.com/images/2020/joyabo-screenshot-example-02.png)
 
 
 ## Features
